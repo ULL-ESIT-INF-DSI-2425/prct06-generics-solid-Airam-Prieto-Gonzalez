@@ -1,5 +1,5 @@
 import { Disc } from "./Disc";
-import { Single } from "./Single"
+import { Single } from "./Single";
 
 /**
  * @description Class that represents a discography of a singer
@@ -9,7 +9,7 @@ import { Single } from "./Single"
  */
 export class Discography<T extends Single | Disc | (Single | Disc)> {
   #name: string;
-  #discs: (Disc|Single)[] = [];
+  #discs: (Disc | Single)[] = [];
 
   /**
    * @description Creates an instance of Discography.

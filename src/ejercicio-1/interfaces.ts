@@ -1,14 +1,12 @@
-
-
 /**
  * Interface Streamable, that describes the properties of a Streamable
  * @interface Streamable
  * @param {string} topic Topic of the Streamable
  * @param {T[]} StreamArray Array of Streams
  */
-export interface Streamable <T> {
-        readonly topic: string
-        StreamArray: T[]
+export interface Streamable<T> {
+  readonly topic: string;
+  StreamArray: T[];
 }
 
 /**
@@ -17,9 +15,9 @@ export interface Streamable <T> {
  * @param {T[]} StreamArray Array of Streams
  */
 export interface BasicsStreamable<T> extends Streamable<T> {
-        AddStream(stream: T): void
-        ShowStreams(): string
-        GetStream(name: string): T | undefined
+  AddStream(stream: T): void;
+  ShowStreams(): string;
+  GetStream(name: string): T | undefined;
 }
 
 /**
@@ -27,13 +25,8 @@ export interface BasicsStreamable<T> extends Streamable<T> {
  * @interface SearchStreamable
  */
 export interface SearchStreamable<T> extends BasicsStreamable<T> {
-        SearchByYear(year: number): string
-        SearchByName(name: string): string
-        SearchByDuration(duration: number): string
-        SearchByCreator(creator: string): string
+  SearchByYear(year: number): string;
+  SearchByName(name: string): string;
+  SearchByDuration(duration: number): string;
+  SearchByCreator(creator: string): string;
 }
-
-
-
-
-

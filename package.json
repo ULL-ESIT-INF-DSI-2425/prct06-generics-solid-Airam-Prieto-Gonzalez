@@ -10,6 +10,10 @@
   "scripts": {
     "dev-1": "tsc-watch --onSuccess \"node dist/ejercicio-1/ejercicio-1.js\"",
     "dev-2": "tsc-watch --onSuccess \"node dist/ejercicio-2/ejercicio-2.js\"",
+    "dev-3": "tsc-watch --onSuccess \"node dist/ejercicio-3/ejercicio-3.js\"",
+    "dev-4": "tsc-watch --onSuccess \"node dist/ejercicio-4/ejercicio-4.js\"",
+    "dev-5": "tsc-watch --onSuccess \"node dist/ejercicio-5/ejercicio-5.js\"",
+    "dev-6": "tsc-watch --onSuccess \"node dist/ejercicio-6/ejercicio-6.js\"",
     "doc": "typedoc",
     "test": "vitest run",
     "coverage": "vitest run --coverage --coverage.include src --coverage.exclude docs"
@@ -36,5 +40,9 @@
     "typedoc": "^0.27.9",
     "typescript-eslint": "^8.25.0",
     "vitest": "^3.0.7"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.9",
+    "types": "^0.1.1"
   }
 }

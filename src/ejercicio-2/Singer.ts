@@ -1,6 +1,6 @@
-import { Discography } from "./Discography"
-import { Disc } from "./Disc"
-import { Single } from "./Single"
+import { Discography } from "./Discography";
+import { Disc } from "./Disc";
+import { Single } from "./Single";
 
 /**
  * @description Class that represents a singer.
