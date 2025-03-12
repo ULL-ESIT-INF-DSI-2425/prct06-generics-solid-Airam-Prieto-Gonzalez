@@ -64,6 +64,7 @@ export class ArithmeticableCollection<T extends Arithmeticable<T>> {
                 if (iterator < 0 || this.elements.length === 0 || iterator >= this.elements.length) {
                         return undefined
                 }
+                return this.elements[iterator]
         }
 
         /**

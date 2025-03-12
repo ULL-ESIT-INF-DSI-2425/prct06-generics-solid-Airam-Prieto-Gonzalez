@@ -9,6 +9,7 @@ describe("modi", () => {
                 let coll = new ArithmeticableCollection<ComplexNumber>(num_a)
                 coll.AddArithmeticable(num_b)
                 expect(coll.GetNumberOfArithmeticables()).toStrictEqual(2)
+                expect(coll.GetArithmeticable(1)).toEqual({"r_num": 2,"i_num": 1})
         })
 
         test("Suma", () => {
